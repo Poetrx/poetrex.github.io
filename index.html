@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">My Portfolio</h1>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <div class="menu-btn" id="menuBtn">☰</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <!-- Video Background -->
+    <video autoplay muted loop class="hero-video">
+      <source src="live.mp4" type="video/mp4">
+      Browser kamu tidak mendukung video.
+    </video>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <h2>Hello, I'm <span>Adli</span></h2>
+
+      <!-- Typing Text -->
+      <p id="typing-text"></p>
+
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+
+  </section>
+  <!-- ✅ HERO SECTION SELESAI -->
+
+  <!-- About Us -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate UI/UX Designer and Web Developer who loves creating modern
+      and responsive websites for all devices.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">UI/UX Design</div>
+      <div class="skill-card">Figma</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio website.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Landing Page</h3>
+        <p>Modern landing page design for business.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>UI Dashboard</h3>
+        <p>Admin dashboard UI design with clean layout.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Adli Portfolio | All Rights Reserved</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
