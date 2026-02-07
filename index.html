@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Poetrex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1 class="logo">Poetrex.</h1>
+<nav id="nav" class="mobile-menu">  
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  
+  <!-- Hero -->
+  <section id="home" class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="live.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-content">
+    <h2 class="hero-title">
+      <span class="hero-hello"><strong>Hello, I'm</strong></span>
+      <span id="typing" class="hero-name"></span>
+    </h2>
+
+    <p id="typewriter-text" class="hero-subtitle"></p>
+
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>I'm Poetrex, a passionate UI/UX Designer and Front-End Developer who loves building modern and responsive websites with clean code and beautiful designs.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">UI/UX Design</div>
+      <div class="skill-card">Figma</div>
+      <div class="skill-card">Wix</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">Portfolio Website</div>
+      <div class="project-card">Landing Page Design</div>
+      <div class="project-card">Mobile App UI</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form
+    class="contact-form"
+    id="contactForm"
+    action="https://formspree.io/f/xeezyrwb"
+    method="POST"
+  >
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+    <p id="form-status"></p>
+  </form>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
